@@ -23,9 +23,8 @@ echo GridView::widget([
 		     'columns' => [
 		     	[
 		            'class' => 'yii\grid\CheckboxColumn',
-		            'cssClass'=>'aman',
-		            'name'=>'select',
-		            
+		            'cssClass' => 'aman',
+		            //'checkboxOptions' => ["id" => ]  
 		        ],
 		        'id',
 		        'product_id',
@@ -142,5 +141,5 @@ $('#confirmmsg').keyup(function(){
 
 ";
 $this->registerJs($js);
-
+//$this->registerJsFile('@web/js/myjs.js');
 ?>

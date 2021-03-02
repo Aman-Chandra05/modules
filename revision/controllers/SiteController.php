@@ -65,7 +65,6 @@ class SiteController extends Controller
         $data=$model->findOne($id);
         if($data->delete())
         {
-           
             Yii::$app->session->setFlash('success', 'Record Deleted from database');
         }
         return $this->redirect('index');
