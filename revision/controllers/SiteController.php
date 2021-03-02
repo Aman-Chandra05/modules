@@ -59,6 +59,17 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionDelete($id)
+    {
+        $model = new Variant();
+        $data=$model->findOne($id);
+        if($data->delete())
+        {
+           
+            Yii::$app->session->setFlash('success', 'Record Deleted from database');
+        }
+        return $this->redirect('index');
+    }
     public function actionBulkaction()
     {
 

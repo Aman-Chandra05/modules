@@ -1,1 +1,0 @@
-alert("Js inside module");
